@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Overpass:ital,wght@0,700;1,400&display=swap');
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  background: var(--very-dark-blue);
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
+}
+
+.wrapper {
+  background: linear-gradient(160deg, var(--dark-blue), var(--very-dark-blue));
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-submit{
+  background-color: var(--orange);
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-submit:hover{
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.btn-rating:hover{
+  background-color: var(--orange);
+}
+
+.p-rating{
+  color: var(--orange);
+}
+
+@media (min-width: 500px) {
+  .wrapper{
+    width: 400px;
+  }
+}
