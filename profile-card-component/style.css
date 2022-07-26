@@ -38,7 +38,7 @@ body {
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 5px 5px 50px var(--dark-grayish-blue);
+    box-shadow: 5px 5px 200px var(--dark-grayish-blue);
 }
 
 .avatar {
