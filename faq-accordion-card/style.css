@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    /* Background gradient: */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Text */
+    --soft-red: hsl(14, 88%, 65%);
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        180deg,
+        var(--soft-violet) 0%,
+        var(--soft-blue) 100%
+    );
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 540px;
+    width: 960px;
+    margin: 150px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.card_left {
+    width: 480px;
+    height: 540px;
+}
+
+.card_left_desktop {
+    width: 480px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+.woman {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 32%;
+    position: absolute;
+}
+
+.box {
+    top: -59%;
+    left: -19.5%;
+    position: relative;
+    z-index: 1;
+}
+
+.pattern {
+    transform: translate(-50%, -50%);
+    top: 39%;
+    left: -19%;
+    position: absolute;
+}
+
+.card_left_mobile {
+    display: none;
+}
+
+.card_right {
+    margin: 4rem 6rem 4rem 0;
+    width: 50%;
+}
+
+.card_right > h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.card_right > div {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.card_right button {
+    width: 100%;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.card_right button:hover {
+    color: var(--soft-red);
+}
+.card_right button:focus {
+    font-weight: 700;
+}
+
+.card_right p {
+    display: none;
+}
+
+.card_right button:focus + p {
+    display: block;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
